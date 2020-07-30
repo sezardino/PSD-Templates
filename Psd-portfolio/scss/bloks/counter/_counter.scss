@@ -1,0 +1,77 @@
+.counter {
+  background: linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+  padding-top: 70px;
+  padding-bottom: 60px;
+  .container {
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+  }
+
+  &__list-item {
+    padding-top: 60px;
+    padding-bottom: 33px;
+
+    text-align: center;
+
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $white;
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--counter1 {
+      &:before {
+        content: url(/img/deco/counter/counter1.png)
+      }
+    }
+    &--counter2 {
+      &:before {
+        content: url(/img/deco/counter/counter2.png)
+      }
+    }
+    &--counter3 {
+      &:before {
+        content: url(/img/deco/counter/counter3.png)
+      }
+    }
+    &--counter4 {
+      &:before {
+        content: url(/img/deco/counter/counter4.png)
+      }
+    }
+    &--counter5 {
+      &:before {
+        content: url(/img/deco/counter/counter5.png)
+      }
+    }
+  }
+
+  &__subtitle {
+
+  }
+
+  &__descr {
+    margin-top: 22px;
+  }
+}
+

@@ -1,0 +1,28 @@
+.head {
+  background-image: url('img/deco/head/bg.jpg');
+  // background-image: url('img/deco/head/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 381px;
+  padding-bottom: 385px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-top: 10px;
+  }
+
+  &__descr {
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 44px;
+  }
+}

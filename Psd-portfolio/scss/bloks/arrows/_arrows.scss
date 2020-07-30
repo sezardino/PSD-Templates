@@ -1,0 +1,18 @@
+.arrows {
+  width: 52px;
+  display: flex;
+  justify-content: space-between;
+  &__btn {
+    border: none;
+    background-color: transparent;
+    width: 22px;
+    cursor: pointer;
+    &:disabled {
+      opacity: 50%;
+    }
+  }
+  &__left {
+    transform: rotate(180deg);
+  }
+}
+

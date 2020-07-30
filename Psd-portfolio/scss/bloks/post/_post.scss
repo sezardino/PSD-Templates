@@ -1,0 +1,73 @@
+.post {
+  border: 1px solid #f8f8f8;
+
+  padding-bottom: 30px;
+  .img__wrapper {
+    display: block;
+    max-width: 370px;
+    max-height: 220px;
+
+    position: relative;
+
+    .date__wrapper {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+
+      font-family: 'Montserrat';
+      text-align: center;
+      color: $white;
+
+      .date {
+        display: block;
+
+        padding: 8px 12px;
+
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: $date-bg;
+
+        font-size: 24px;
+      }
+      .month {
+        display: block;
+
+        padding: 8px 15px;
+
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: $month-bg;
+
+        font-size: 12px;
+      }
+    }
+  }
+  &__text{
+    padding-top: 30px;
+    padding-left: 30px;
+
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  &__subdescr {
+    margin-top: 25px;
+  }
+
+  &__link {
+    margin-top: 30px;
+  }
+  &:hover {
+    background-color: $brown;
+    .post__subtitle {
+      color: $gold;
+    }
+    .post__subdescr {
+      color: $white;
+    }
+  }
+}

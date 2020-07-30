@@ -1,0 +1,28 @@
+
+.header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+		&__logo {
+      margin-right: 200px;
+    }
+		&__ux {
+      margin-left: 60px;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    
+      width: 1230px;
+    }
+    .ux {
+      width: 70px;
+    
+      display: flex;
+      justify-content: space-between;
+    }
+}
+

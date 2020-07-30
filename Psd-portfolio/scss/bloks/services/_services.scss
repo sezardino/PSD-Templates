@@ -1,0 +1,79 @@
+.services {
+  padding: 70px 0;
+
+  text-align: center;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    padding-top: 80px;
+    padding-bottom: 35px;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+
+    &:hover {
+      color: $gold;
+      &:before {
+        background-color: $gold;
+      }
+      &::after {
+        background-color: $gold;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 3px;
+      background-color: $grey;
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 165px;
+      transform: translateX(-50%);
+    }
+    &--web {
+      &:before {
+        content: url(/img/deco/services/web.svg);
+      }
+    }
+    &--dev {
+      &:before {
+        content: url(/img/deco/services/dev.svg);
+      }
+    }
+    &--cust {
+      &:before {
+        content: url(/img/deco/services/cust.svg);
+      }
+    }
+    &--mark {
+      &:before {
+        content: url(/img/deco/services/mark.svg);
+      }
+    }
+  }
+  &__subdescr {
+    margin-top: 20px;
+  }
+}

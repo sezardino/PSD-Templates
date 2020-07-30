@@ -1,0 +1,16 @@
+
+
+.wp-theme {
+  background: linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+  }
+  &__descr {
+    margin-top: 10px;
+  }
+}

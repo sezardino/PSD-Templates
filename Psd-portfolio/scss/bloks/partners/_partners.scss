@@ -1,0 +1,17 @@
+.partners {
+  background: url(/img/deco/partners/partners.jpg);
+  background-repeat: no-repeat;
+
+  padding: 137px 0;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+  }
+  &__wrapper {
+    width: 210px
+  }
+}
+

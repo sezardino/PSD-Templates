@@ -1,0 +1,48 @@
+.realization {
+  padding-top: 85px;
+
+  background-color: $white3;
+
+  text-align: center;
+  .container {
+    position: relative;
+  }
+  &__descr {
+    margin-top: 25px;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    max-width: 770px;
+    max-height: 482px;
+    &--mini {
+      max-height: 400px;
+    }
+    &--left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      z-index: 0;
+    }
+
+    &--center {
+      z-index: 3;
+    }
+
+    &--right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      z-index: 0;
+    }
+  }
+}
+

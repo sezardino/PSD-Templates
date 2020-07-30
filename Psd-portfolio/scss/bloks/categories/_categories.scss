@@ -1,0 +1,33 @@
+.categories {  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 605px;
+
+  &__label {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  input {
+    display: none;
+    &:checked + label{
+      background-color: $brown3;
+      color: $white;
+    }
+  }
+  label {
+    cursor: pointer;
+    border: 1px solid $brown3;
+    border-radius: 3px;
+    padding: 5px 18px;
+
+    font-family: 'Montserrat' , serif;
+    font-size: 14px;
+    font-weight: 700;
+    color:$brown3;
+  }
+}
