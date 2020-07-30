@@ -1,0 +1,17 @@
+.site-footer{
+    background-color: #1D1F24;
+    color: #ffffff;
+
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 62px;
+}
+
+@media(min-width:768px){
+    .site-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

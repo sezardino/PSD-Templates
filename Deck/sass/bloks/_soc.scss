@@ -1,0 +1,60 @@
+.soc{
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.soc__button{
+    border:none;
+    background-color: transparent;
+
+    display: flex;
+    align-items:center;
+
+    padding: 0;
+
+}
+
+.soc__number{
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 30px;
+
+    padding: 0;
+    margin: 0;
+    margin-left: 9px;
+    margin-right: 17px;
+
+    color: #FFFFFF;
+}
+
+.soc--top{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+    bottom: 30px;
+}
+
+.soc__button--share{
+    &::before{
+        content: url(/img/icons/share.svg);
+        width: 18px;
+        height: 15px;
+    }
+}
+.soc__button--view{
+    &::before{
+        content: url(/img/icons/view.svg);
+        width: 22px;
+        height: 15px;
+    }
+}
+.soc__button--comment{
+    &::before{
+        content: url(/img/icons/comments.svg);
+        width: 20px;
+        height: 20px;
+    }
+}

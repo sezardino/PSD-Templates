@@ -1,0 +1,39 @@
+.nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 29px;
+    z-index: 1;
+    &_logo{
+        color: #7c7c7c;
+        font-family: "Josefin Sans";
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .menu{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        &_item{
+            margin-left: 56px;
+            &:first-child{
+                margin-left: 0px;
+            }
+            &-link{
+                color: #000000;
+                font-size: 19px;
+                font-family: "Lato Thin";
+                font-weight: 100;
+
+                span{
+                    color: #515151;
+                    font-family: "Josefin Sans";
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

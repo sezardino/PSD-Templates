@@ -1,0 +1,19 @@
+.buisness{
+    padding-top:73px ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 365px 1fr;
+    column-gap:23px;
+    row-gap: 23px;
+    &_text{
+        grid-area: 1/1/2/3;
+    }
+    &-img{
+        width: 100%;
+        &:nth-child(4){
+            grid-area: 2/2/3/4;
+        }
+    }
+
+}

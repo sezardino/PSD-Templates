@@ -1,0 +1,117 @@
+.hero{
+    position: relative;
+
+
+    &__slide{
+        background-color:#fff2ed;
+        background-image: url(../img/bg_main.jpg);
+        background-position:7px -84px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+        padding-top:189px;
+        padding-bottom: 308px;
+    }
+    &__p{
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+
+        margin: 0;
+        margin-top: 31px;
+    }
+    &__title{
+        margin: 0;
+        text-transform: none;
+        color: #ed2024;
+        font-family: 'Great Vibes';
+        font-size:100px;
+        font-weight: 400;
+        /* Text style for "Taste on" */
+        letter-spacing: 4px;
+    }
+}
+.slick-prev, .slick-next{
+    position: absolute;
+    top: 50%;  
+    transform: translateY(-50%);
+
+    z-index: 1;
+    &::before{
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.slick-prev{
+    left: 121px;
+    &::before{
+        content:url(../icons/prev.png);
+    }
+}
+.slick-next{
+    right: 121px;
+    &::before{
+        content:url(../icons/next.png);
+    }
+}
+
+
+
+
+@media(min-width:1920px){
+    .hero{
+        &__slide{
+            padding-top: 600px;
+            padding-bottom: 600px;
+        }
+        &__title{
+            font-size: 165px;
+        }
+        &__p{
+            font-size: 50px;
+        }
+    }
+}
+@media(max-width:1200px){
+
+}
+@media(max-width:991px){
+    .hero{
+        &__slide{
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    }
+}
+@media(max-width:768px){
+    .hero{
+        &__title{
+            font-size: 60px;
+        }
+        &__slide{
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+    }
+}
+@media(max-width:576px){
+    .hero{
+        &__title{
+            font-size: 42px;
+        }
+        &__slide{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        &__p{
+            font-size: 16px;
+            margin-top: 0;
+        }
+    }
+}

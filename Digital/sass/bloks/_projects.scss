@@ -1,0 +1,46 @@
+.projects{
+    padding: 90px 0 98px 0;
+    position: relative;
+    overflow: hidden;
+    &-wr{
+        margin-top: 89px;
+        *{
+            text-align: left;
+        }
+        width: 475px;
+    }
+    &_list{
+        &-item{
+            display: flex;
+            align-items:center;
+            margin-top: 25px;
+        }
+        &-wr{
+            width: 66px;
+            height: 66px;
+            border: 2px solid #000000;
+            border-radius:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+        }
+    }
+    &_link{
+        display: block;
+        margin-top: 22px;
+        font-family: $font;
+        color: #7CC576;
+        font-size: 900;
+        &:hover{
+            color: $bcolor;
+            text-decoration: none;
+            font-size: 700;
+        }
+    }
+    &-img{
+        position: absolute;
+        top: 229px;
+        z-index: -1;
+    }
+}

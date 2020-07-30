@@ -1,0 +1,96 @@
+.cooking{
+    &__bg{
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/bg_coocing.jpg);
+        background-position: 0 -1182px;
+        background-repeat: no-repeat;
+
+        position: absolute;
+    }
+    background-color:#fff2ed;
+    position: relative;
+    .container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__content{
+        background-color:#fff2ed;
+        width: 50%;
+        padding-top: 99px;
+        padding-bottom: 119px;
+        text-align: center;
+    }
+    &__p{
+        font-size: 18px;
+        max-width: 536px;
+        margin: 0 auto;
+    }
+    &__title{
+        color: #ff7e66;
+        font-size: 45px;
+        font-weight: 900;
+        letter-spacing: 4.9px;
+        margin-bottom: 208px;
+        position: relative;
+        &::after{
+            content:url(/icons/deash.png);
+            width: 151px;
+            height: 145px;
+            position: absolute;
+            bottom:-180px;
+            left: 50%;
+            margin-left: -75.5px;
+        }
+    }
+}
+@media(min-width:1920px){
+
+}
+@media(max-width:1200px){
+
+}
+@media(max-width:991px){
+    .cooking{
+        &__content{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+}
+@media(max-width:768px){
+    .cooking{
+        &__bg{
+            width: 40%;
+        }
+        &__content{
+            width: 60%;
+
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        &__title{
+            font-size: 40px;
+        }
+
+    }
+}
+@media(max-width:576px){
+    .cooking{
+        &__bg{
+            width: 30%;
+        }
+        &__content{
+            width: 70%;
+
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__p{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.home{
+    padding: 179px 0 71px 0;
+    background: url(../img/cover.png) center (center/cover) no-repeat;
+    &-me{
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 33px;
+        color:#fff;
+        line-height: 23px;
+        span{
+            font-size: 23px;
+        }
+    }
+    &-down{
+        img{
+            display: block;
+            margin: 0 auto;
+            margin-top: 140px;
+            width: 15px;
+            height: 14px;
+        }
+
+    }
+}
+@media(max-width:768px){
+    .home{
+        padding: 90px 0 50px 0;
+        background: url(../img/cover.png) no-repeat;
+        &-down{
+            img{
+                display: block;
+                margin: 0 auto;
+                margin-top: 140px;
+                width: 15px;
+                height: 14px;
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.follow{
+    padding: 131px 0 119px 0;
+    &_social{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 79px;
+        display: flex;
+        justify-content: space-around;
+        &-link{
+            max-width: 24px;
+            max-height: 21px;
+            position: relative;
+            z-index: 2;
+           &:hover{
+                &::before{
+                    content:"";
+                    width: 53px;
+                    height: 53px;
+                    border-radius: 100%;
+                    background-color:#E6B5B5;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                }
+                &::after{
+                    content:"";
+                    width: 63px;
+                    height: 63px;
+                    border-radius: 100%;
+                    border: 1px solid #E6B5B5;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+@media(max-width:758px){
+    .follow{
+        padding: 30px 0;
+    }
+}

@@ -1,0 +1,57 @@
+@import'base/animation';
+@import'base/mixins';
+@import'base/variables';
+@import'libs/bootstrap-grid.min';
+@import'libs/bootstrap-reboot.min';
+@import'libs/fonts';
+@import'libs/slick';
+@import'libs/slick.theme';
+body{
+    padding: 25px;
+}
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.hr{
+    display:block;
+    margin: 0 auto;
+    width: 62px;
+    height: 3px;
+    margin-top: 19px;
+    background-color: #D07C7C;
+    &-white{
+        margin-top: 50px;
+        background-color:#fff;
+        width: 79px;
+        margin-bottom: 28px;
+    }
+}
+.logo{
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color:#838181;
+    margin-left: 54px;
+}
+@media(max-width:768px){
+    body{
+        padding: 0;
+    }
+    .hr{
+        &-white{
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@import'bloks/about';
+@import'bloks/buttons';
+@import'bloks/follow';
+@import'bloks/contact';
+@import'bloks/footer';
+@import'bloks/header';
+@import'bloks/home';
+@import'bloks/nav';
+@import'bloks/slider';
+@import'bloks/video';
+@import'bloks/works';

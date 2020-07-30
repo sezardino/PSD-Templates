@@ -1,0 +1,76 @@
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &__card{
+        min-width: 287px;
+        text-align: center;
+        background-color: #ffffff;
+
+        padding-top: 145px;
+        padding-bottom: 30px;
+
+        margin-bottom: 10px;
+
+        background-repeat: no-repeat;
+        position: relative;
+        &::before{
+            position: absolute;
+            top:72.5px;
+            transform: translate(-50%, -50%);
+        }
+        &:nth-child(1){
+            background-image: url(../img/bg_email.png);
+
+            &::before{
+                content: url(../icons/email.svg);
+            }
+        }
+        &:nth-child(2){
+            background-image: url(../img/bg_location.png);
+
+            &::before{
+                content: url(../icons/map_pin.svg);
+            }
+        }
+        &:nth-child(3){
+            background-image: url(../img/bg_phone.png);
+
+            &::before{
+                content: url(../icons/telephone.svg);
+            }
+        }
+    }
+}
+
+@media(min-width:1920px){
+
+}
+@media(max-width:1200px){
+
+}
+@media(max-width:991px){
+    .info{
+        padding-bottom: 11px;
+        &__card{
+            min-width: 200px;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+@media(max-width:768px){
+    .info{
+        &__card{
+            min-width: 240px;
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

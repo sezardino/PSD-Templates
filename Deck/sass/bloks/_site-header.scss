@@ -1,0 +1,26 @@
+.site-header{
+    border-bottom: 1px solid #EBEBEB;
+
+    position: relative;
+
+    padding: 20px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width:1200px){
+    .site-header{
+        padding: 0;
+
+        
+        &__wrapper{
+            width: 1140px;
+
+            margin: 0 auto;
+
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}

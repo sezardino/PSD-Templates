@@ -1,0 +1,98 @@
+.header{
+    font-family: $font;
+    text-transform: uppercase;
+    margin: 0;
+    &-main{
+        font-size: 40px;
+        line-height: 40px;
+        &-relax{
+            color: $mcolor;
+            text-align: left;
+            span{
+                color: #7CC576;
+            }
+        }
+        &-contact{
+            color: #fff;
+        }
+    }
+    &-sub{
+        font-size: 18px;
+        &-services{
+            margin-top: 37px;
+        }
+        &-culture{
+            margin-top: 25px;
+        }
+        &-footer{
+            color: #fff;
+        }
+    }
+    &-home{
+        font-size: 60px;
+        color: $mcolor;
+        line-height: 65px;
+    }
+    &-footer{
+        font-size: 18px;
+        color: #fff;
+    }
+}
+.title{
+    color: $tcolor;
+    &-home{
+        color: #CCCCCC;
+        font-size: 20px;
+    }
+    &-main{
+        font-size: 20px;
+        color: #777777;
+    }
+    &-sub{
+        font-size: 16px;
+        &-relax{
+            margin-top: 30px;
+            color:#CCCCCC;
+        }
+        &-projects{
+            margin-top: 16px;
+        }
+    }
+    &-comment{
+        font-size: 22px;
+        color: #777777;
+        text-align: left;
+        &-autor{
+            font-size: 18px;
+            color:#7CC576;
+        }
+    }
+}
+.descr{
+    font-size: 14px;
+    margin-top: 9px;
+}
+
+
+
+@media(max-width: 768px){
+    .header{
+        &-home{
+            font-size: 52px;
+            line-height: 52px;
+        }
+        &-main{
+            font-size: 38px;
+        }
+    }
+    .title{
+        &-sub{
+            &-relax{
+                margin-top: 0;
+            }
+        }
+        &-comment{
+            font-size: 19px;
+        }
+    }
+}

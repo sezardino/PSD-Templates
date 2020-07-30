@@ -1,0 +1,32 @@
+.services{
+    padding: 90px 0;
+    &_wrapper{
+        margin-top: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &_box{
+        margin-left: 36px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .services{
+        &_wrapper{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &_box{
+            width: 50%;
+            margin: 0;
+            &:last-child{
+                margin-top: 25px;
+            }
+        }
+    }
+}

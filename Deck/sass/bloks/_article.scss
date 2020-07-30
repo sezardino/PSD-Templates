@@ -1,0 +1,148 @@
+.article{
+    background-color:#000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 92px 0 21px 0;
+    padding-left: 25px;
+    padding-right: 66px;
+
+    position: relative;
+
+    margin-bottom: 20px;
+
+}
+.article__title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+
+    letter-spacing: -0.2px;
+
+    color: #FFFFFF;
+
+    margin: 0;
+    margin-bottom: 41px;
+}
+.article__category{
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.article__footer{
+    display: flex;
+}
+
+.article--top{
+    padding: 0;
+    padding-top: 87px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.article__title--top{
+    margin: 0;
+    margin-bottom: 77px;
+
+    font-family: 'Oswald';
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+
+    text-transform: uppercase;
+}
+
+.article__category--top{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.article__text--top{
+    display: none;
+}
+
+.apocalypse{
+    background-image: url(../img/content/apocalypse.jpg);
+}
+.optimize{
+    background-image: url(../img/content/optimize.jpg);
+}
+.pc{
+    background-image: url(../img/content/pc.jpg);
+}
+.differance{
+    display: none;
+    background-image: url(../img/content/differance.jpg);
+}
+.cam{
+    display: none;
+
+}
+.laptop{
+    display:none;
+}
+
+@media(min-width:768px){
+    .article{
+        margin: 0;
+    }
+    .apocalypse{
+        background-image: url(../img/content/apocalypse-tablet.jpg);
+    }
+    .optimize{
+        background-image: url(../img/content/optimize-tablet.jpg);
+    }
+    .pc{
+        background-image: url(../img/content/pc-tablet.jpg);
+    }
+    .differance{
+        display: inline;
+        background-image: url(../img/content/differance-tablet.jpg);
+    }
+    .laptop{
+        display:none;
+        background-image: url(../img/content/laptop-tablet.jpg); 
+    }
+    .cam{
+        display: inline;
+        background-image: url(../img/content/cam-tablet.jpg);
+    }
+}
+@media(min-width:1200px){
+    .article{
+        margin: 0;
+    }
+    .apocalypse{
+        background-image: url(../img/content/apocalypse-decstop.jpg);
+    }
+    .optimize{
+        background-image: url(../img/content/optimize-decstop.png);
+    }
+    .pc{
+        background-image: url(../img/content/pc-decstop.png);
+    }
+    .differance{
+        display: inline;
+        background-image: url(../img/content/differance-decstop.png);
+    }
+    .laptop{
+        display:inline;
+        background-image: url(../img/content/laptop-decstop.png); 
+    }
+    .cam{
+        display: inline;
+        background-image: url(../img/content/cam-decstop.png);
+    }
+}

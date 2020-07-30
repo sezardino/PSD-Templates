@@ -1,0 +1,183 @@
+@import'base/animation';
+@import'base/mixins';
+@import'base/variables';
+@import'libs/bootstrap-reboot.min';
+@import'libs/fonts';
+@import'libs/slick';
+@import'libs/slick.theme';
+
+body{
+    font-family: 'Oswald';
+    background-color: #ffffff;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+.title{
+    color: #f01b16;
+    font-size: 40px;
+    font-weight: 400;
+
+    margin: 0;
+    span{
+        font-size: 50px;
+        text-transform: none;
+        font-family: 'Great Vibes';
+        font-weight: 900;
+    }
+}
+.p{
+    color: #9f9a97;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: none;
+    margin: 0;
+}
+.button{
+    display: inline-block;
+    background-color: #ff7e66;
+    color: #fff2ee;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+
+    margin-top: 62px;
+
+    padding: 18px 30px;
+}
+.shadow{
+    text-shadow: 
+            -0   -5px 3px   #FFFFFF,
+             0   -5px 3px   #FFFFFF,
+            -0    5px 3px   #FFFFFF,
+             0    5px 3px   #FFFFFF,
+            -5px -0   3px   #FFFFFF,
+             5px -0   3px   #FFFFFF,
+            -5px  0   3px   #FFFFFF,
+             5px  0   3px   #FFFFFF,
+            -1px -5px 3px   #FFFFFF,
+             1px -5px 3px   #FFFFFF,
+            -1px  5px 3px   #FFFFFF,
+             1px  5px 3px   #FFFFFF,
+            -5px -1px 3px   #FFFFFF,
+             5px -1px 3px   #FFFFFF,
+            -5px  1px 3px   #FFFFFF,
+             5px  1px 3px   #FFFFFF,
+            -2px -5px 3px   #FFFFFF,
+             2px -5px 3px   #FFFFFF,
+            -2px  5px 3px   #FFFFFF,
+             2px  5px 3px   #FFFFFF,
+            -5px -2px 3px   #FFFFFF,
+             5px -2px 3px   #FFFFFF,
+            -5px  2px 3px   #FFFFFF,
+             5px  2px 3px   #FFFFFF,
+            -3px -5px 3px   #FFFFFF,
+             3px -5px 3px   #FFFFFF,
+            -3px  5px 3px   #FFFFFF,
+             3px  5px 3px   #FFFFFF,
+            -5px -3px 3px   #FFFFFF,
+             5px -3px 3px   #FFFFFF,
+            -5px  3px 3px   #FFFFFF,
+             5px  3px 3px   #FFFFFF,
+            -4px -5px 3px   #FFFFFF,
+             4px -5px 3px   #FFFFFF,
+            -4px  5px 3px   #FFFFFF,
+             4px  5px 3px   #FFFFFF,
+            -5px -4px 3px   #FFFFFF,
+             5px -4px 3px   #FFFFFF,
+            -5px  4px 3px   #FFFFFF,
+             5px  4px 3px   #FFFFFF,
+            -5px -5px 3px   #FFFFFF,
+             5px -5px 3px   #FFFFFF,
+            -5px  5px 3px   #FFFFFF,
+             5px  5px 3px   #FFFFFF,
+            -5px -5px 3px   #FFFFFF,
+             5px -5px 3px   #FFFFFF,
+            -5px  5px 3px   #FFFFFF,
+             5px  5px 3px   #FFFFFF;
+}
+
+
+
+@media(min-width:1920px){
+    .title{
+        font-size: 50px;
+        span{
+            font-size: 70px;
+        }
+    }
+
+
+}
+@media(max-width:1200px){
+    .container{
+        width: 960px;
+    }
+}
+@media(max-width:991px){
+    .container{
+        width: 720px;
+    }
+    .slider{
+        &__title{
+            font-size: 60px;
+        }
+    }
+
+}
+@media(max-width:768px){
+    .container{
+        width: 540px;
+    }
+    .button{
+        margin-top: 15px;
+        padding: 11px 18px;
+    }
+
+}
+@media(max-width:576px){
+    .container{
+        width: 100%;
+    }
+    .title{
+        font-size: 24px;
+        span{
+            font-size: 34px;
+        }
+    }
+    .p{
+        font-size: 16px;
+    }
+    .button{
+        margin-top: 30px;
+        padding: 11px 18px;
+    }
+}
+
+@import'bloks/header';
+@import'bloks/hero';
+@import'bloks/wellcome';
+@import'bloks/cooking';
+@import'bloks/menu';
+@import'bloks/slider';
+@import'bloks/services';
+@import'bloks/gallery';
+@import'bloks/blog';
+@import'bloks/contact';
+@import'bloks/footer';
+@import'bloks/info';
+@import'bloks/media';

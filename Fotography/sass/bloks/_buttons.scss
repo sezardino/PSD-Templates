@@ -1,0 +1,30 @@
+.button{
+    padding: 15px 51px 15px 51px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: $red;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    &-works{
+        display: block;
+        margin: 79px auto 0 auto;
+    }
+    &-wr{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top: 32px;
+    }
+    &-contact{
+        margin: 0;
+        padding: 15px 51px 15px 51px
+    }
+}
+@media(max-width:768px){
+    .button{
+        &-works{
+            margin-top: 15px;
+        }
+    }
+}

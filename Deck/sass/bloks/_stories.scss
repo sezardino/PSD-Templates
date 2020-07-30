@@ -1,0 +1,76 @@
+.stories{
+    background: #FFFFFF;
+    border: 1px solid #F2F3F6;
+
+    padding-top:35px;
+
+    margin-bottom: 20px;
+}
+.stories__title{
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 1.53125px;
+    text-transform: uppercase;
+
+    color: #1D1F24;
+
+    margin: 0;
+    margin-bottom: 32px;
+    margin-left: 27px;
+}
+.stories__list{
+    counter-reset: myCounter;
+    margin: 0;
+    padding: 0;
+}
+.stories__item{
+    list-style: none;
+    font-family: 'Lato';
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+
+    letter-spacing: -0.2px;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 61px;
+
+    border: 1px solid #F2F3F6;
+
+    position: relative;
+
+    &:before {
+        counter-increment: myCounter;
+        content:counter(myCounter);
+        position: absolute;
+        top: 27px;
+        left: 27px;
+
+        text-align: center;
+
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+
+
+        color: #1D1F24;
+
+        opacity: 0.17;
+      }
+}
+@media(min-width:768px){
+    .stories{
+        margin: 0;
+        padding: 0;
+    }
+}
+  
+
+  

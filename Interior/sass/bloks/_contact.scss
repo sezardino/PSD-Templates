@@ -1,0 +1,65 @@
+.contact{
+    padding-top: 123px;
+    padding-bottom: 292px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 702px;
+    }
+    &_wr{
+        form{
+            margin-top: 24px;
+            width: 412px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            input{
+                width: 47%;
+                background-color:transparent;
+                border: none;
+                border: 1px solid #626262;
+                padding: 8px 15px;
+                &::placeholder{
+                    color: #000000;
+                    font-family: "Josefin Sans";
+                    font-size: 19px;
+                    font-weight: 700;
+                    line-height: 33.34px;
+                    text-align: center;
+                }
+            }
+            textarea{
+                margin-top: 19px;
+                width: 100%;
+                min-height: 118px;
+                resize: none;
+                background-color:transparent;
+                border: none;
+                border: 1px solid #626262;
+                padding: 8px 17px;
+                &::placeholder{
+                    color: #000000;
+                    font-family: "Josefin Sans";
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 33.34px;
+                }
+            }
+            button{
+                margin-top: 54px;
+                margin-left: 216px;
+                width: 243px;
+                height: 43px;
+                background-color: #d6d6d6;
+                border: none;
+                color: #5b5b5b;
+                font-family: "Josefin Sans";
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 33.34px;
+            }
+        }
+    }
+}

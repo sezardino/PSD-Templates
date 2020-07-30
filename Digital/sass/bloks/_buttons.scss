@@ -1,0 +1,43 @@
+.button{
+    font-family: $font;
+    font-size: 15px;
+    padding: 21px 33px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: #7CC576;
+    border: none;
+    color: $mcolor;
+    &:hover{
+        color:$bcolor;
+        background-color: $mcolor;
+    }
+    &-home{
+        margin-top: 54px;
+    }
+    &-relax{
+        margin-top: 57px;
+    }
+    &-contact{
+        margin-top: 23px;
+        background-color:transparent;
+        border: none;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: $font;
+        color: #fff;
+        padding: 12px 27px;
+        &:hover{
+            background-color: #fff;
+            color: #7CC576;
+        }
+    }
+}
+@media(max-width: 768px){
+    .button{
+        &-relax{
+            margin-top: 24px;
+        }
+    }
+}

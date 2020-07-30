@@ -1,0 +1,78 @@
+.category{
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    padding: 9px 25px;
+    background-color: #FF565C;
+}
+
+.category-list{
+    min-width: 231px;
+    max-height: 135px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    margin-top: 33px;
+}
+
+.category-list__item{
+    margin-bottom: 12px ;
+}
+
+.category-list__link{
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    
+}
+
+@media(min-width:768px){
+    .category-list{
+        max-width: 430px;
+        max-height: 87px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+
+        margin-top: 0;
+    }
+    .category-list__item{
+        margin-right: 60px;
+    }
+}
+@media(min-width:1200px){
+    .category-list{
+        min-width: 657px;
+        max-height: 87px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:flex-start;
+        flex-direction: column;
+
+        margin-top: 0;
+    }
+    .category-list__item{
+        margin-right: 20px;
+    }
+}

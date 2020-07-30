@@ -1,0 +1,27 @@
+@import'base/animation';
+@import'base/mixins';
+@import'base/variables';
+@import'libs/bootstrap-grid.min';
+@import'libs/bootstrap-reboot.min';
+@import'libs/fonts';
+
+body{
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+.container{
+    padding: 0;
+}
+
+
+
+
+@import'bloks/nav';
+@import'bloks/hero';
+@import'bloks/about';
+@import'bloks/featured';
+@import'bloks/buisness';
+@import'bloks/delivery';
+@import'bloks/contact';
+@import'bloks/footer';
+@import'bloks/header';

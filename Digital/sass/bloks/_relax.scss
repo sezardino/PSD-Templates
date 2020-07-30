@@ -1,0 +1,62 @@
+.relax{
+    *{
+        text-align: left;
+    }
+    display: flex;
+    .shape{
+        padding: 100px 0;
+        width: 29%;
+        background-color: #E9E9E9;
+        position: relative;
+        overflow: hidden;
+        &_img{
+            position: absolute;
+            top:100px;
+            right: 0;
+            transform: translateX(50%); 
+        }
+    }
+    &_list{
+        margin-top: 25px;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 52px;
+        &-item{
+            // font-size: 16px;
+            color: #cccccc;
+            position: relative;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0;
+            }
+            &:before{
+                content: '';
+                display: block;
+                width: 32px;
+                height: 32px;
+                padding: 10px;
+                border: 2px solid #ccc;
+                border-radius: 100%;
+                background: url(../icons/checkmark-1.png) center no-repeat;
+                position: absolute;
+                left: -52px;
+            }
+        }
+    }
+    &_container{
+        width: 71%;
+        background: url(../img/bg2.png) center (center/cover) no-repeat;
+        padding: 100px 10px 100px 100px;
+    }
+}
+@media(max-width: 768px){
+    .relax{
+        &_container{
+            padding-left: 40px;
+        }
+        &_list{
+            margin-top: 0;
+        }
+
+    }
+}
