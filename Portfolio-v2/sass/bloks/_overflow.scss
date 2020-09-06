@@ -1,0 +1,25 @@
+.overflow{
+    position: fixed;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba( #000000, 0.5);
+
+    z-index:2;
+    display: none;
+
+    overflow: auto;
+
+    cursor: pointer;
+
+    &__wrapper{
+        width: 80%;
+        border: 2px solid #ffffff;
+    
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

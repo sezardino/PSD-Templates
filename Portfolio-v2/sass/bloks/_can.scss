@@ -1,0 +1,42 @@
+.can{
+    background-color:$c-dark2;
+    position: relative;
+    &__wrapper{
+        position: relative;
+        top: -40px;
+
+        width: 250px;
+
+        margin: 0 auto;
+
+    }
+    &__start{
+        width: 100%;
+        min-height: 40px;
+        max-height: 267px;
+
+        position: absolute;
+        top: 1px;
+        transform: translateY(-100%);
+    }
+}
+@media(min-width:$tablet-width){
+    .can{
+        background-color: #252525;
+        &__wrapper{
+            width: 640px;
+
+            top: -65px;
+        }
+    }
+}
+@media(min-width:$decstop-width){
+    .can{
+        &__wrapper{
+            width: 1140px;
+
+            top: -100px;
+        }
+
+    }
+}

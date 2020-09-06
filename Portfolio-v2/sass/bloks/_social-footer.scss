@@ -1,0 +1,23 @@
+.social-footer{
+    margin: 0;
+    margin-top: 50px;
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+}
+@media(min-width:$decstop-width){
+    .social-footer{
+        margin-top: 35px;
+
+        justify-content: flex-start;
+        &__item{
+            margin-right: 40px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+}

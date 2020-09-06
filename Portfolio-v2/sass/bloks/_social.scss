@@ -1,0 +1,33 @@
+.social{
+    &__list{
+    padding: 0;
+    margin-bottom: 0;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+    &__item{
+        margin-top: 15px;
+        &:first-child{
+            margin-top: 0; 
+        }
+    }
+    &__link{
+        padding: 10px;
+        &:hover{
+            fill: $c-yellow
+        }
+    }
+
+}
+@media(min-width:$decstop-width){
+    .social{
+        &__item{
+            margin-bottom: 20px;
+        }
+    }
+}

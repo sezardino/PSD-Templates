@@ -1,0 +1,48 @@
+.contact-footer{
+    text-align: center;
+    &__title{
+        font-family: 'Oswald';
+        font-size: 30px;
+        color:#c89611;
+
+        letter-spacing: 3px;
+        margin: 0;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        margin-top: 25px;
+    }
+    &__item:first-child{
+        margin-bottom: 10px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 35px;
+        font-family: 'Oswald';
+        letter-spacing: 3px;
+        color:#ffffff;
+        span{
+            color: #868686;
+        }
+    }
+}
+@media(min-width:$decstop-width){
+    .contact-footer{
+        text-align: left;
+        &__title{
+            font-size: 30px;
+        }
+        &__link{
+            font-size: 13px;
+        }
+        &__list{
+            margin-top: 25px;
+        }
+        &__item:first-child{
+            margin-bottom: 0;
+        }
+    }
+}

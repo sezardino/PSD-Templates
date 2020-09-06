@@ -1,0 +1,126 @@
+.about{
+    background-color:$c-dark2;
+    padding-bottom: 215px;
+
+    position: relative;
+    &__wr{
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrapper{
+        width:320px;
+        margin: 0 auto;
+
+        padding-left: 10px;
+        padding-right: 10px;
+
+        box-sizing: border-box;
+    }
+    &__title{
+        margin: 0;
+
+    
+        position: relative;
+
+        &::after{
+            content:'';
+            display: block;
+            width: 56px;
+            height: 2px;
+            background-color:$c-yellow;
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+    &__subtitle{
+        margin: 0;
+        margin-top: 21px;
+        text-align: center;
+    }
+    &__descr{
+        font-family: 'Oswald';
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 25px;
+
+        letter-spacing: 3px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        margin: 0;
+        margin-top: 20px;
+    }
+    &__grey{
+        width: 100%;
+        min-height: 91px;
+        max-height: 381px;
+
+        position: absolute;
+        bottom: -1px;
+    }
+}
+@media(min-width:$tablet-width){
+    .about{
+        background-color: #252525;
+        padding-bottom: 240px;
+
+        &__wrapper{
+            width: 640px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__wr{
+            order: 1;
+            display: flex;
+            align-items: flex-end;
+        }
+        &__title{
+            &::after{
+                left: 3px;
+                transform: translateX(0);
+            }
+        }
+        &__subtitle{
+            text-align: left;
+        }
+        &__descr{
+            text-align: left;
+            max-width: 60%;
+
+            margin: 0;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 100;
+        }
+    }
+}
+@media(min-width:$decstop-width){
+    .about{
+        padding-bottom: 380px;
+        &__wrapper{
+            width: 1140px;
+        }
+        &__wr{
+            align-items: flex-start;
+        }
+        &__title{
+            &::after{
+                width: 100px;
+                bottom: -7px;
+            }
+        }
+        &__subtitle{
+            margin-top: 38px;
+        }
+        &__descr{
+            font-size: 18px;
+            line-height: 45px;
+            font-weight: 100;
+        }
+    }
+}

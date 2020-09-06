@@ -1,0 +1,47 @@
+.footer {
+  padding-top: 57px;
+  padding-bottom: 148px;
+
+  background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+
+  &__title {
+    margin-bottom: 84px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__policy {
+    display: block;
+    margin-top: 72px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+    text-decoration-line: underline;
+
+    color: #A5A5A5;
+  }
+}
+
+@media(max-width: 576px) {
+  .footer {
+    padding-top: 47px;
+    padding-bottom: 50px;
+
+    &__title {
+      margin-bottom: 48px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.header{
+    font-size: 32px;
+    line-height: 32px;
+    color: $grey;
+    text-align: center;
+    margin: 0;
+    &-white{
+        color: #FFFFFF;
+    }
+}
+.title{
+    margin-top: 24px;
+    font-weight: 100;
+    color: $grey;
+    &-ido{
+        font-size: 18px;
+        text-align: center;
+    }
+    &-about{
+        font-size: 14px;
+    }
+}
+.button{
+    display: block;
+    margin: 44px auto 0 auto;
+    width: 200px;
+    height: 40px;
+    background-color:$grey;
+    border: none;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 12px;
+    padding: 0;
+    &:hover{
+        background-color: $hover;
+    }
+    &-white{
+        background-color:$white;
+        color:$grey;
+    }
+
+}
+@media(max-width:768px){
+    .header{
+        font-size: 30px;
+    }
+    .title{ 
+        font-weight: 400;
+        &-ido{
+            font-size: 17px;
+        }
+        &-about{
+            font-size: 15px;
+        }
+    }
+    .button{
+        &-works{
+            margin-top: 40px;
+        }
+    }
+}

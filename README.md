@@ -10,4 +10,12 @@ Fotography: https://sezardino.github.io/PSD-Templates/Fotography/
 
 Interior: https://sezardino.github.io/PSD-Templates/Interior/
 
-Psd template(desctop only): https://sezardino.github.io/PSD-Templates/Psd-portfolio/
+Psd-portfolio(desktop only): https://sezardino.github.io/PSD-Templates/Psd-portfolio/
+
+SpaceY: https://sezardino.github.io/PSD-Templates/SpaceY/
+
+Portfolio-template: https://sezardino.github.io/PSD-Templates/Portfolio-template/
+
+Portfolio: https://sezardino.github.io/PSD-Templates/Portfolio/
+
+Portfolio-v2: https://sezardino.github.io/PSD-Templates/Portfolio-v2/

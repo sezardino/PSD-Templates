@@ -1,0 +1,127 @@
+.hero{
+    position: relative;
+
+    padding-top: 150px;
+    padding-bottom: 180px;
+    background: url('../img/content/FOTO.png')  calc(50% + 80px) 75px/280px no-repeat ,
+                url('../img/content/circle.svg') calc(50% - 15px) 75px/355px no-repeat;
+    &__wrapper{
+        width: 320px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-family: "Oswald";
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 35px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: $c-dark2;
+
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &__descr{
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 3px;
+
+        color: $c-dark2;
+
+        width: 30%;
+
+        margin: 0;
+        margin-top: 10px;
+
+        position: relative;
+
+        &:before{
+            content:'';
+            display: block;
+            width: 100px;
+            height: 3px;
+
+            background-color:$c-dark2;
+
+            position: absolute;
+            top: -14px;
+            left: -42px;
+        }
+    }
+    &__dark{
+        width:100%;
+        min-height: 40px;
+        max-height: 267px;
+
+        position: absolute;
+        bottom: -1px;
+    }
+}
+
+@media(min-width:$tablet-width){
+    .hero{
+        padding-top: 145px;
+        padding-bottom: 280px;
+
+        background: url('../img/content/FOTO-tablet.png')  calc(50% + 140px) 65px/438px no-repeat ,
+                         url('../img/content/circle.svg') calc(50% - 45px) 80px/468px no-repeat;
+        
+        &__wrapper{
+            width: 640px;
+        }
+        &__title{
+            font-size: 65px;
+            line-height: 70px;
+        }
+        &__descr{
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media(min-width:$decstop-width){
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 320px;
+         background: url('../img/content/foto-decstop.png')  calc(50% + 200px) 65px/500px no-repeat ,
+                    url('../img/content/circle.svg') calc(50% + 10px) 111px/700px no-repeat;
+
+        &__wrapper{
+            width: 1200px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &__title{
+            font-size: 110px;
+            line-height: 115px;
+
+            margin-bottom: 35px;
+            margin-left: 50px;
+        }
+        &__descr{
+            font-size: 26px;
+            line-height: 26px;
+
+            margin-top: 30px;
+            margin-left: 50px;
+
+            &::before{
+                width: 300px;
+                top: -30px;
+                left: -60px;
+            }
+        }
+    }
+}

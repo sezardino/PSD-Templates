@@ -1,0 +1,15 @@
+@keyframes circle-show{
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes progress-move {
+    from {
+        width: 0;
+    }
+}

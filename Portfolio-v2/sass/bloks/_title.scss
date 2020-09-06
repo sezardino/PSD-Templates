@@ -1,0 +1,40 @@
+.title{
+    font-family: 'Oswald';
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #414141;
+    &--m{
+        line-height: 35px;
+        color: $c-circle;
+        padding-bottom: 28px;
+    }
+}
+@media(min-width:$tablet-width){
+    .title{
+        font-size: 60px;
+        line-height: 50px;
+        &--m{
+            margin-top: 10px;
+            line-height: 45px;
+            text-align-last: left;
+            padding-bottom: 38px;
+        }
+    }
+}
+@media(min-width:$decstop-width){
+    .title{
+        font-size: 47px;
+        &--m{
+            font-size: 90px;
+            line-height: 100px;
+
+            margin-top: 0;
+        }
+    }
+}

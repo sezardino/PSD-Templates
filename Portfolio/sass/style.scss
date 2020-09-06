@@ -1,0 +1,39 @@
+@import'base/animation';
+@import'base/mixins';
+@import'base/variables';
+@import'libs/bootstrap-grid.min';
+@import'libs/bootstrap-reboot.min';
+@import'libs/fonts';
+
+body{
+    background-color: #E0E0E0;
+    position: relative;
+    *{
+        font-family: 'Gotham Pro', sans-serif;
+    }
+    .container{
+        position: relative;
+        &-color{
+            background-color:$white;
+        }
+
+    }
+    .scrollup{
+        padding: 50px;
+        width: 185px;
+        height: 175px;
+        position: fixed;
+        bottom:50px;
+        z-index: 2;
+        cursor: pointer;
+        display: none;
+    }
+}
+@import'bloks/nav';
+@import'bloks/home';
+@import'bloks/about';
+@import'bloks/skills';
+@import'bloks/works';
+@import'bloks/contact';
+@import'bloks/footer';
+@import'bloks/header';

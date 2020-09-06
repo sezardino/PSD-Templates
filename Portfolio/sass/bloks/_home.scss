@@ -1,0 +1,104 @@
+.home{
+    background: url(../img/bg_home.png) center (center/cover) no-repeat;
+    padding: 213px 0 436px 0;
+    .logo{
+        display: none;
+    }
+    &-me{
+        font-size: 72px;
+        line-height: 65px;
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+        &-title{
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: 100;
+            line-height: 24px;
+            color:$white;
+        }
+    }
+    &-hr{
+        width: 322px;
+        height: 1px;
+        margin: 0;
+        margin-top: 29px;
+        background-color: $white;
+    }
+    &-social{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        &-link{
+            margin-bottom: 17px;
+            width: 35px;
+            height: 35px;
+            border-radius: 100%;
+            &:hover{
+                background-color:$grey;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+}
+@media(max-width:991px){
+    .home{
+        background-position: 35%;
+        padding: 200px 0 350px 0;
+        .logo{
+            display: block;
+        }
+        &-me{
+            margin-top: 50px;
+        }
+        &-social{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+    }
+}
+@media(max-width:576px){
+    .home{
+        background-position: 46%;
+        padding: 140px 0 470px 0;
+        .logo{
+            margin: 0 auto;
+        }
+        &-me{
+            text-align: center;
+            margin-top: 60px;
+            &-title{
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        &-hr{
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &-social{
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+}
+@media(max-width:350px){
+    .home{
+        &-me{
+            font-size: 66px;
+            line-height: 57px;
+        }
+        &-hr{
+            width: 95%;
+        }
+    }
+}

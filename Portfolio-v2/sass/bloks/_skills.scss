@@ -1,0 +1,116 @@
+.skills{
+    position: relative;
+    padding-top: 40px;
+    &__start{
+        width: 100%;
+        min-height: 91px;
+        max-height: 381px;
+
+        position: absolute;
+        top: 1px;
+        transform: translateY(-100%);
+    }
+    &__wrapper{
+        width: 320px;
+        margin: 0 auto;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        box-sizing: border-box;
+    }
+    &__wr{
+        margin-top: 40px;
+    }
+    &__title{
+        margin: 0;
+        text-align: center;
+    }
+    &__subtitle{
+        margin: 0;
+        margin-top: 10px;
+    
+        text-align: center;
+    }
+    &__progress{
+        margin: 0;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        padding-left: 30px;
+
+        list-style: none;
+
+        height: 150px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        box-sizing: border-box;
+    }
+    &__item{
+        font-family: 'Oswald';
+        font-size: 13px;
+        line-height: 20px;
+
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        color: #414141;
+
+        margin-bottom: 30px;
+        &:nth-last-child(-n+3){
+            margin-left: 50px;
+        }
+    }
+    .check{
+        position: relative;
+        &::before{
+            content:url('../img/deco/checked.png');
+            display:block;
+            position: absolute;
+            left: -30px;
+        }
+    }
+}
+@media(min-width:$tablet-width){
+    .skills{
+        &__wrapper{
+            width: 640px;
+        }
+    }
+}
+@media(min-width:$decstop-width){
+    .skills{
+        padding-top: 0;
+        &__wrapper{
+            width: 1140px;
+        }
+        &__wr{
+            display:flex;
+            justify-content: space-around;
+            margin-top: 60px
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+        &__list{
+            width: 45%;
+            height: 200px;
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+            padding-left: 80px;
+        }
+        &__item{
+            margin-bottom: 37px;
+            font-size: 20px;
+        }
+        .check::before{
+            left: -50px;
+        }
+    }
+}

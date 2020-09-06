@@ -1,0 +1,46 @@
+.nav__no-js{
+    padding-top: 30px;
+    padding-bottom: 35px;
+    order: -1;
+
+    position: relative;
+    width: auto;
+    height: auto;
+    .nav__list{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .nav__link{
+        padding-bottom: 25px;
+        display: flex;
+    }
+    .nav__contact{
+        margin-top: 35px;
+        padding-bottom: 35px;
+    }
+    .nav__item{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .nav__social{
+        margin-top: 35px;
+    }
+    .social__list{
+        flex-direction: row;
+
+    }
+    .social__link{
+        display: flex;
+        align-items: center
+    }
+    .contact__list{
+        flex-direction: row;
+
+    }
+    .contact__item{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.nav-footer{
+    text-align: center;
+
+    &__title{
+        font-family: 'Oswald';
+        font-size: 30px;
+        color:#c89611;
+        letter-spacing: 3px;
+
+        margin: 0;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    
+        margin-top: 10px;
+    }
+    &__link{
+        font-size: 18px;
+        font-family: 'Oswald';
+        line-height: 50px;
+        color:#ffffff;
+        padding: 5px;
+        letter-spacing: 3px;
+    }
+}
+
+@media(min-width:$tablet-width){
+    .nav-footer{
+        text-align: left;
+        &__list {
+            margin-top: 25px;
+        }
+        &__link{
+            font-size: 13px;
+            line-height: 35px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+    }
+}
