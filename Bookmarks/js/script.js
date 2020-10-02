@@ -86,14 +86,283 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/counter.js":
+/*!***************************!*\
+  !*** ./src/js/counter.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const counter = () => {
+  const counter = document.querySelector('.counter');
+  const count = counter.textContent.split('.').reduce((a, b) => a + b); // console.log(counter.textContent.split('.').reduce((a, b) => a + b));
+
+  let value = +count;
+  let timerId = setInterval(() => {
+    value -= Math.floor(count / 20);
+    const stringValue = value.toString();
+    counter.textContent = `${stringValue.slice(0, -3)}.${stringValue.slice(-3)}`;
+
+    if (value <= 0) {
+      counter.textContent = 0;
+      clearInterval(timerId);
+    }
+  }, 1000);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (counter);
+
+/***/ }),
+
+/***/ "./src/js/form.js":
+/*!************************!*\
+  !*** ./src/js/form.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const form = () => {
+  const form = document.querySelector('form');
+  const formInput = form.querySelector('input');
+  const submitButton = form.querySelector('button');
+  const indicator = form.querySelector('.form__indicator');
+
+  const checkValidity = () => {
+    const value = formInput.value;
+    formInput.setCustomValidity(' ');
+    let validity = true;
+
+    if (!value.includes('@')) {
+      form.classList.add('form--error');
+      indicator.textContent = "It's not an email";
+    }
+
+    if (value.length === 0) {
+      form.classList.add('form--error');
+      indicator.textContent = 'Line is too short';
+    }
+
+    setTimeout(() => form.classList.remove('form--error'), 2000);
+
+    if (validity) {
+      return true;
+    }
+  };
+
+  const submitButtonHandler = evt => {
+    const validity = checkValidity();
+
+    if (!validity) {
+      evt.preventDefault();
+      return;
+    }
+
+    form.reset();
+  };
+
+  const submitHandler = evt => {
+    evt.preventDefault();
+  };
+
+  submitButton.addEventListener('click', submitButtonHandler);
+  form.addEventListener('submit', submitHandler);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (form);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form */ "./src/js/form.js");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/js/menu.js");
+/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
+/* harmony import */ var _counter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./counter */ "./src/js/counter.js");
+/* harmony import */ var _popup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./popup */ "./src/js/popup.js");
 
 
+
+
+
+Object(_form__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_menu__WEBPACK_IMPORTED_MODULE_1__["default"])();
+new _tabs__WEBPACK_IMPORTED_MODULE_2__["default"]({
+  tabsContainerSelector: '.tabs',
+  tabsSelector: '.tabs__item',
+  contentSelector: '.content__item',
+  tabActiveSelector: 'tabs__item--active',
+  contentActiveSelector: 'content__item--active'
+});
+new _tabs__WEBPACK_IMPORTED_MODULE_2__["default"]({
+  tabsContainerSelector: '.questions',
+  tabsSelector: '.questions__button',
+  contentSelector: '.questions__text',
+  tabActiveSelector: 'questions__button--active',
+  contentActiveSelector: 'questions__text--shown'
+});
+Object(_counter__WEBPACK_IMPORTED_MODULE_3__["default"])();
+Object(_popup__WEBPACK_IMPORTED_MODULE_4__["default"])();
+
+/***/ }),
+
+/***/ "./src/js/menu.js":
+/*!************************!*\
+  !*** ./src/js/menu.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const menu = () => {
+  const menuOpenBtn = document.querySelector('.header__hamburger');
+  const menuCloseBtn = document.querySelector('.header__close');
+  const menu = document.querySelector('nav');
+  const header = document.querySelector('.header');
+
+  const menuOpenBtnHandler = () => {
+    menu.classList.add('nav--active');
+    header.classList.add('header--active');
+  };
+
+  const menuCloseBtnHandler = () => {
+    menu.classList.remove('nav--active');
+    header.classList.remove('header--active');
+  };
+
+  menuOpenBtn.addEventListener('click', menuOpenBtnHandler);
+  menuCloseBtn.addEventListener('click', menuCloseBtnHandler);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (menu);
+
+/***/ }),
+
+/***/ "./src/js/popup.js":
+/*!*************************!*\
+  !*** ./src/js/popup.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const popup = () => {
+  const popup = document.querySelector('.popup');
+  const popupClose = document.querySelector('.popup__close');
+  let wasOpened = false;
+  const marginRight = document.body.clientWidth - window.innerWidth;
+
+  const openPopup = () => {
+    wasOpened = true;
+    popup.classList.add('popup--active');
+    document.body.style.overflow = 'hidden';
+    document.body.style.marginRight = marginRight + 'px';
+  };
+
+  const closePopup = () => {
+    popup.classList.remove('popup--active');
+    document.body.style.overflow = '';
+    document.body.style.marginRight = '';
+  };
+
+  setTimeout(() => {
+    openPopup();
+  }, 30000);
+
+  const mouseHandler = evt => {
+    if (evt.pageY < 100 && !wasOpened) {
+      openPopup();
+    }
+  };
+
+  popupClose.addEventListener('click', closePopup);
+  setTimeout(() => {
+    document.addEventListener('mousemove', mouseHandler);
+  }, 5000);
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (popup);
+
+/***/ }),
+
+/***/ "./src/js/tabs.js":
+/*!************************!*\
+  !*** ./src/js/tabs.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tabs; });
+class Tabs {
+  constructor({
+    tabsContainerSelector,
+    tabsSelector,
+    contentSelector,
+    tabActiveSelector,
+    contentActiveSelector
+  }) {
+    this.tabsContainer = document.querySelector(tabsContainerSelector);
+    this.tabs = document.querySelectorAll(tabsSelector) || [];
+    this.tabSelector = tabsSelector.slice(1);
+    this.content = document.querySelectorAll(contentSelector) || [];
+    this.tabActiveClass = tabActiveSelector;
+    this.contentActiveClass = contentActiveSelector;
+    this.init();
+  }
+
+  clearActive() {
+    this.tabs.forEach(item => {
+      item.classList.remove(this.tabActiveClass);
+    });
+    this.content.forEach(item => {
+      item.classList.remove(this.contentActiveClass);
+    });
+  }
+
+  findIndex(value) {
+    let index;
+    this.tabs.forEach((item, i) => {
+      if (item === value) {
+        index = i;
+      }
+    });
+    return index;
+  }
+
+  addActive(index) {
+    this.tabs[index].classList.add(this.tabActiveClass);
+    this.content[index].classList.add(this.contentActiveClass);
+  }
+
+  tabsContainerHandler(evt) {
+    const target = evt.target;
+
+    if (target.classList.contains(this.tabSelector)) {
+      this.clearActive();
+      const index = this.findIndex(target);
+      this.addActive(index);
+    }
+  }
+
+  init() {
+    this.tabsContainer.addEventListener('click', evt => this.tabsContainerHandler(evt));
+  }
+
+} // export default Tabs;
 
 /***/ })
 

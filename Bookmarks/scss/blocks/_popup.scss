@@ -1,0 +1,104 @@
+.popup {
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($main, 0.9);
+
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 0.2s all;
+
+  &--active {
+    left: 0;
+  }
+
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+  }
+
+  &__img {
+    position: relative;
+    width: 90%;
+    z-index: 2;
+  }
+
+  &__close {
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: $mobileTitleFS;
+    font-weight: 500;
+    color: $main;
+  }
+
+  &__text {
+    margin: 0 auto;
+
+    margin-top: 25px;
+
+    font-size: $mobileTextFS;
+    font-weight: 400;
+    letter-spacing: $mobileTextLS;
+    line-height: $mobileTextLH;
+    color: $grey;
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .popup {
+    padding-top: 50px;
+
+    &__container {
+      width: 70%;
+      padding-top: 60px;
+      padding-bottom: 120px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      border-radius: 10px;
+    }
+
+    &__wrapper {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: flex-end;
+    }
+
+    &__img {
+      width: 40%;
+    }
+
+    &__title {
+      font-size: $desktopTitleFS;
+    }
+
+    &__text {
+      max-width: 455px;
+
+      font-size: $desktopTextFS;
+      letter-spacing: $desktopTextLS;
+      line-height: $desktopTextLH;
+    }
+  }
+}

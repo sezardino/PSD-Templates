@@ -12,22 +12,6 @@
     &:last-child {
       border-bottom: 1px solid $main;
     }
-
-    &--active {
-      .questions {
-        &__text {
-          display: block;
-        }
-
-        &__button {
-          transform: rotate(180deg);
-
-          .arrow {
-            stroke: $red;
-          }
-        }
-      }
-    }
   }
 
   &__title {
@@ -45,7 +29,6 @@
   }
 
   &__text {
-
     font-size: $mobileTextFS;
     font-weight: 400;
     line-height: $mobileTextLH;
@@ -54,8 +37,25 @@
 
     display: none;
     padding-bottom: 20px;
+
+    &--shown {
+      display: block;
+    }
+  }
+
+  &__button--active {
+    span {
+      transform: rotate(180deg);
+      transition: 1s all;
+    }
+
+    .arrow {
+      stroke: $red;
+    }
   }
 }
+
+
 
 @media(min-width: $desktopWidth) {
   .questions {

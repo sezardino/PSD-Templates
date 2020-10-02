@@ -13,22 +13,24 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    border-top: 1px solid $main;
+    border-top: 1px solid $grey;
 
     font-size: $mobileTextFS;
     font-weight: 500;
     letter-spacing: $mobileTextLS;
     line-height: $mobileTextLH;
-    color: $main;
+    color: $grey;
 
     position: relative;
     cursor: pointer;
 
     &:last-child {
-      border-bottom: 1px solid $main;
+      border-bottom: 1px solid $grey;
     }
 
     &--active {
+      color: $main;
+
       &:after {
         content: '';
         display: block;
@@ -52,7 +54,7 @@
     align-items: center;
     justify-content: space-between;
 
-    border-bottom: 1px solid $main;
+    border-bottom: 1px solid $grey;
 
     &__item {
       width: auto;

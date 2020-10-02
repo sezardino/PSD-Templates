@@ -14,8 +14,13 @@
     align-items: center;
   }
 
+  &__hamburger {
+    padding: 5px;
+  }
+
   &__close {
     display: none;
+    padding: 5px;
   }
 
   &__nav {
@@ -23,6 +28,7 @@
   }
 
   &--active {
+    left: 0;
     padding-bottom: 0;
 
     position: fixed;

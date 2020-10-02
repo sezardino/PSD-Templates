@@ -22,7 +22,7 @@
 
   &--white {
     background-color: #F7F7F7;
-    box-shadow: 0 0 10px rgba($main, 0.1);
+    box-shadow: 0 10px 10px rgba($main, 0.1);
   }
 
   &--cards {
@@ -49,7 +49,7 @@
     margin: 0;
     padding-left: 0;
     width: 100%;
-    font-size: 22px;
+    font-size: 13px;
     font-weight: 400;
     display: flex;
     justify-content: space-between;
