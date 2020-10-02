@@ -1,0 +1,129 @@
+.button {
+  padding: 16px 18px;
+  border: none;
+  background-color: transparent;
+  border-radius: 7px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: $mobileTextFS;
+  letter-spacing: $mobileTextLS;
+  color: $main;
+
+  &--blue {
+    background-color: $blue;
+    color: #ffffff;
+  }
+
+  &--red {
+    background-color: $red;
+    color: #ffffff;
+  }
+
+  &--white {
+    background-color: #F7F7F7;
+    box-shadow: 0 0 10px rgba($main, 0.1);
+  }
+
+  &--cards {
+    padding: 18px 35px;
+  }
+
+  &--login {
+    width: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+
+  &--arrow {
+    padding: 5px;
+    box-shadow: none;
+
+    &:hover {
+      stroke: $red;
+    }
+  }
+
+  &--questions {
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .button {
+    padding: 20px 20px;
+    font-size: $desktopTextFS;
+    letter-spacing: $desktopTextLS;
+
+    &--login {
+      width: 100%;
+      color: #ffffff;
+      background-color: $red;
+      border: none;
+
+      &:hover {
+        padding: 17px 17px;
+        background-color: #ffffff;
+        color: $red;
+        border: 3px solid $red;
+
+      }
+    }
+
+    &--hero {
+      padding: 20px 18px;
+
+      &-fox {
+        &:hover {
+          padding: 17px 15px;
+          background-color: #ffffff;
+          color: $main;
+          border: 3px solid $main;
+        }
+      }
+
+      &-google {
+        &:hover {
+          padding: 17px 15px;
+          background-color: #ffffff;
+          color: $blue;
+          border: 3px solid $blue;
+        }
+      }
+    }
+
+    &--cards {
+      &:hover {
+        padding: 17px 17px;
+        color: $blue;
+        background-color: #ffffff;
+        border: 3px solid $blue;
+      }
+    }
+
+    &--questions {
+      font-size: 27px;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    &--form {
+      &:hover {
+        padding: 17px 17px;
+        color: $red;
+        background-color: #ffffff;
+        border: 3px solid $red;
+      }
+    }
+  }
+}

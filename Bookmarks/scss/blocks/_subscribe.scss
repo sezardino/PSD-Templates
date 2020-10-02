@@ -1,0 +1,57 @@
+.subscribe {
+  padding-top: 60px;
+
+  background-color: $blue;
+
+  color: #ffffff;
+
+  &__count {
+    text-transform: uppercase;
+    font-size: $mobileTextFS;
+    letter-spacing: $mobileTextLS;
+  }
+
+  &__title {
+    margin-top: 20px;
+
+    font-size: $mobileTitleFS;
+    font-weight: 500;
+  }
+
+  &__form {
+    margin-top: 30px;
+  }
+}
+
+
+
+@media(min-width: $desktopWidth) {
+  .subscribe {
+    padding-top: 60px;
+
+    background-color: $blue;
+
+    color: #ffffff;
+
+    &__container {
+      max-width: 485px;
+    }
+
+    &__count {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: $desktopTextLS;
+    }
+
+    &__title {
+      margin-top: 20px;
+
+      font-size: $desktopTitleFS;
+      font-weight: 500;
+    }
+
+    &__form {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.pseudo {
+  &:after {
+    content: '';
+    width: 80%;
+    background-color: $blue;
+
+    position: absolute;
+
+    z-index: -1;
+  }
+
+  &--right {
+    &:after {
+      height: 85%;
+      top: 40px;
+      right: calc(-1*(((100% * 15) / 85)/2));
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+  }
+
+  &--left {
+    &:after {
+      height: 100%;
+      top: 35px;
+      left: calc(-1*(((100% * 15) / 85)/2));
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+  }
+
+}
+
+@media(min-width: $desktopWidth) {
+  .pseudo {
+    &:after {
+      width: 80%;
+    }
+
+    &--right {
+      &:after {
+        height: 80%;
+        top: 136px;
+        right: calc(-1*(((100% * 12) / 85)/2));
+      }
+    }
+
+    &--left {
+      &:after {
+        width: 100%;
+        top: 80px;
+        left: calc(-1*((100% * 16) / 85));
+      }
+    }
+
+  }
+}

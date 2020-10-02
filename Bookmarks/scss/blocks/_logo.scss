@@ -1,0 +1,10 @@
+.logo {
+  width: 120px;
+}
+
+
+@media(min-width: $desktopWidth) {
+  .logo {
+    width: 150px;
+  }
+}

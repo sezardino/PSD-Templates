@@ -1,0 +1,40 @@
+.hero {
+  padding-top: 140px;
+  padding-bottom: 75px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin-top: 70px;
+  }
+
+  &__img {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    &__container {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    &__description {
+      margin-top: 80px;
+    }
+
+    &__img {
+      width: 60%;
+      position: relative;
+      right: -63px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.description {
+
+  &__title {
+    font-size: $mobileTitleFS;
+    font-weight: 500;
+    color: $main;
+  }
+
+  &__text {
+    margin-top: 30px;
+
+    font-size: $mobileTextFS;
+    letter-spacing: $mobileTextLS;
+    font-weight: 400;
+    line-height: $mobileTextLH;
+    color: $grey;
+  }
+
+  &__buttons {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: $desktopWidth) {
+  .description {
+    text-align: left;
+    max-width: 470px;
+
+    &__title {
+      font-size: $desktopTitleFS;
+      font-weight: 500;
+      color: $main;
+    }
+
+    &__text {
+      margin-top: 30px;
+
+      font-size: $mobileTextFS;
+      letter-spacing: $mobileTextLS;
+      font-weight: 400;
+      line-height: $mobileTextLH;
+      color: $grey;
+    }
+
+    &__buttons {
+      margin-top: 35px;
+      max-width: 425px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
