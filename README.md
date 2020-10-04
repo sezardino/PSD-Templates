@@ -19,3 +19,5 @@ Portfolio-template: https://sezardino.github.io/PSD-Templates/Portfolio-template
 Portfolio: https://sezardino.github.io/PSD-Templates/Portfolio/
 
 Portfolio-v2: https://sezardino.github.io/PSD-Templates/Portfolio-v2/
+
+Bookmarks: https://sezardino.github.io/PSD-Templates/Bookmarks/
