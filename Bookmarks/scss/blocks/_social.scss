@@ -23,6 +23,9 @@
 
       &__link {
         padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
 
         &:hover {
 

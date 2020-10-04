@@ -5,6 +5,16 @@
   margin-left: auto;
   margin-right: auto;
 
+  &__img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
+  }
+
   &__mail {
     width: 100%;
     box-sizing: border-box;
@@ -12,13 +22,14 @@
     letter-spacing: $mobileTextLS;
     font-weight: 400;
 
-    padding: 20px 15px;
+    padding: 17px 15px;
     border-radius: 7px;
     border: none;
   }
 
   &__error {
     display: block;
+    position: relative;
   }
 
   &__indicator {
@@ -30,7 +41,7 @@
     margin-bottom: 45px;
   }
 
-  &--susses {
+  &--success {
     .form {
       &__indicator {
         display: block;
@@ -76,6 +87,10 @@
         transform: translate(-50%, 100%);
       }
 
+      &__img {
+        display: block;
+      }
+
       &__susses {
         display: block;
         position: relative;
@@ -95,7 +110,7 @@
       }
 
       &__button {
-        margin-top: 3px;
+        margin-top: 15px;
       }
 
     }
@@ -113,7 +128,8 @@
 
     &__mail {
       width: 330px;
-      font-size: $desktopTextFS;
+      font-size: 16px;
+      color: $grey;
       letter-spacing: $desktopTextLS;
 
       &:placeholder {

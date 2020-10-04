@@ -1,15 +1,15 @@
-.logo {
-  width: 120px;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-
-@media(min-width: $desktopWidth) {
+.header--active {
   .logo {
-    width: 150px;
+    &--text {
+      fill: #fff;
+    }
+
+    &--circle {
+      fill: #fff;
+    }
+
+    &--symbol {
+      fill: $main;
+    }
   }
 }

@@ -8,11 +8,7 @@
   text-align: left;
 
   &__item {
-    border-top: 1px solid $main;
-
-    &:last-child {
-      border-bottom: 1px solid $main;
-    }
+    border-bottom: 1px solid #E0E0E8;
   }
 
   &__title {
@@ -61,7 +57,7 @@
 @media(min-width: $desktopWidth) {
   .questions {
     &__text {
-      font-size: $desktopTextFS;
+      font-size: 16px;
       line-height: $desktopTextLH;
       letter-spacing: $desktopTextLS;
     }
