@@ -24,7 +24,7 @@
   }
 
   &__wrapper {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   &__img {
@@ -50,14 +50,30 @@
 
   &__text {
     margin: 0 auto;
+    width: 90%;
 
     margin-top: 25px;
 
-    font-size: $mobileTextFS;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: $mobileTextLS;
     line-height: $mobileTextLH;
     color: $grey;
+  }
+}
+
+@media(min-width: 576px) {
+  .popup {
+
+    &__container {
+      width: 90%;
+      display: flex;
+    }
+
+    &__wrapper {
+
+      max-width: 50%;
+    }
   }
 }
 

@@ -1,4 +1,6 @@
 .description {
+  max-width: 500px;
+  margin: 0 auto;
 
   &__title {
     font-size: $mobileTitleFS;
@@ -27,10 +29,10 @@
 @media(min-width: $desktopWidth) {
   .description {
     text-align: left;
-    max-width: 470px;
+    max-width: 490px;
 
     &__title {
-      font-size: $desktopTitleFS;
+      font-size: 45px;
       font-weight: 500;
       color: $main;
     }
@@ -38,16 +40,16 @@
     &__text {
       margin-top: 30px;
 
-      font-size: $mobileTextFS;
-      letter-spacing: $mobileTextLS;
+      font-size: 20px;
+      letter-spacing: $desktopTextLS;
       font-weight: 400;
-      line-height: $mobileTextLH;
+      line-height: $desktopTextLH;
       color: $grey;
     }
 
     &__buttons {
       margin-top: 35px;
-      max-width: 425px;
+      max-width: 450px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;

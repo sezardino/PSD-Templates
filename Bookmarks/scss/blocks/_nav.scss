@@ -106,6 +106,8 @@
 
 @media(min-width: $desktopWidth) {
   .nav {
+    position: static;
+    width: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,7 +130,7 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $main;
-        font-size: $desktopTextFS;
+        font-size: 16px;
         font-weight: 400;
 
         &:hover {

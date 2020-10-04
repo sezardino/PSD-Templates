@@ -137,20 +137,19 @@ const form = () => {
     let validity = true;
 
     if (!value.includes('@')) {
+      validity = false;
       form.classList.add('form--error');
-      indicator.textContent = "It's not an email";
+      indicator.textContent = "It's not an email!";
     }
 
     if (value.length === 0) {
       form.classList.add('form--error');
-      indicator.textContent = 'Line is too short';
+      validity = false;
+      indicator.textContent = 'Line is too short!';
     }
 
-    setTimeout(() => form.classList.remove('form--error'), 2000);
-
-    if (validity) {
-      return true;
-    }
+    setTimeout(() => form.classList.remove('form--error'), 5000);
+    return validity;
   };
 
   const submitButtonHandler = evt => {
@@ -159,9 +158,12 @@ const form = () => {
     if (!validity) {
       evt.preventDefault();
       return;
+    } else {
+      form.classList.add('form--susses');
+      indicator.textContent = 'You are subscribe';
+      setTimeout(() => form.classList.remove('form--susses'), 5000);
+      form.reset();
     }
-
-    form.reset();
   };
 
   const submitHandler = evt => {
@@ -262,7 +264,7 @@ const popup = () => {
   const popup = document.querySelector('.popup');
   const popupClose = document.querySelector('.popup__close');
   let wasOpened = false;
-  const marginRight = document.body.clientWidth - window.innerWidth;
+  const marginRight = window.innerWidth - document.body.clientWidth;
 
   const openPopup = () => {
     wasOpened = true;

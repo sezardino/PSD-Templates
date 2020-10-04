@@ -64,7 +64,7 @@
     letter-spacing: $desktopTextLS;
 
     &--login {
-      width: 100%;
+      width: auto;
       color: #ffffff;
       background-color: $red;
       border: none;
@@ -110,7 +110,10 @@
     }
 
     &--questions {
-      font-size: 27px;
+      font-size: 19px;
+      padding-left: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       &:hover {
         color: $red;

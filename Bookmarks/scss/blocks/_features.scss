@@ -9,8 +9,8 @@
   }
 
   &__text {
+    max-width: 500px;
     margin: 0 auto;
-
     margin-top: 25px;
 
     font-size: $mobileTextFS;
@@ -31,7 +31,6 @@
 
 @media(min-width: $desktopWidth) {
   .features {
-    padding-top: 20px;
     padding-bottom: 80px;
 
     &__container {
@@ -45,7 +44,7 @@
     }
 
     &__text {
-      max-width: 455px;
+      max-width: 460px;
 
       font-size: $desktopTextFS;
       letter-spacing: $desktopTextLS;

@@ -1,6 +1,9 @@
 .form {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__mail {
     width: 100%;
@@ -10,7 +13,7 @@
     font-weight: 400;
 
     padding: 20px 15px;
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
   }
 
@@ -23,11 +26,11 @@
   }
 
   &__button {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 45px;
   }
 
-  &--error {
+  &--susses {
     .form {
       &__indicator {
         display: block;
@@ -45,6 +48,46 @@
       &__error {
         display: block;
         position: relative;
+        border: 4px solid green;
+        border-bottom: 20px solid green;
+        background-color: green;
+        border-radius: 10px;
+      }
+
+      &__button {
+        margin-top: 3px;
+      }
+
+    }
+  }
+
+  &--error {
+    .form {
+      &__indicator {
+        display: block;
+        font-size: $mobileTextFS;
+        letter-spacing: $mobileTextLS;
+        font-weight: 400;
+        color: #ffffff;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+      }
+
+      &__susses {
+        display: block;
+        position: relative;
+        border: 4px solid green;
+        border-bottom: 20px solid green;
+        background-color: green;
+        border-radius: 10px;
+      }
+
+      &__error {
+        display: block;
+        position: relative;
         border: 4px solid $red;
         border-bottom: 20px solid $red;
         background-color: $red;
@@ -52,7 +95,7 @@
       }
 
       &__button {
-        margin-top: 13px;
+        margin-top: 3px;
       }
 
     }
@@ -69,9 +112,13 @@
     align-items: flex-start;
 
     &__mail {
-      width: 300px;
+      width: 330px;
       font-size: $desktopTextFS;
       letter-spacing: $desktopTextLS;
+
+      &:placeholder {
+        color: rgba($grey, 0.9);
+      }
     }
 
     &__button {

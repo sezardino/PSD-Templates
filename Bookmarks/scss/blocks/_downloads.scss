@@ -9,6 +9,8 @@
   }
 
   &__text {
+    max-width: 500px;
+    margin: 0 auto;
     margin-top: 26px;
     font-size: $mobileTextFS;
     font-weight: 400;
